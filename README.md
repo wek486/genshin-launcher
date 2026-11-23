@@ -2,6 +2,20 @@
 
 一个基于 **Tauri 2、Vue 3 和 Rust** 的 Windows 桌面启动器。它启动本机已安装的原神或米哈游官方启动器，并支持自定义背景、图标和音乐。
 
+**[下载 v0.1.0 · Windows x64 EXE](https://github.com/wek486/genshin-launcher/releases/download/v0.1.0/genshin-launcher-v0.1.0-windows-x64.exe)** · [查看版本说明](https://github.com/wek486/genshin-launcher/releases/tag/v0.1.0)
+
+下载后直接运行，首次使用时在「设置 → 选择程序」指定本机的原神或官方启动器。
+
+## 界面展示
+
+![原神启动器主页和透明标题栏](desktop/docs/screenshots/launcher.jpg)
+
+| 设置界面 | 动态壁纸示例 |
+| --- | --- |
+| [![游戏路径、背景适配、音乐和创意工坊设置](desktop/docs/screenshots/settings.jpg)](desktop/docs/screenshots/settings.jpg) | [![神里绫华动态壁纸播放效果](desktop/docs/screenshots/wallpaper.jpg)](desktop/docs/screenshots/wallpaper.jpg) |
+
+动态壁纸示例来自 Wallpaper Engine 创意工坊作品 [《神里绫华·武士刀》](https://steamcommunity.com/sharedfiles/filedetails/?id=2685898597)（bai22331）。设置截图中的游戏路径为示例。
+
 ## 功能
 
 - **游戏启动**：在设置中选择原神或官方启动器的 `.exe`。点击「开始游戏」，在 Windows UAC 弹窗中确认管理员授权。启动成功后自动暂停背景音乐并隐藏到系统托盘。
