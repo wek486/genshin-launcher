@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "原神启动器",
+  "version": "0.1.0",
+  "identifier": "com.lenovo.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "原神启动器",
+        "width": 1280,
+        "height": 720,
+        "minWidth": 720,
+        "minHeight": 520,
+        "decorations": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$APPLOCALDATA/custom-media/wallpaper/*.jpg",
+          "$APPLOCALDATA/custom-media/wallpaper/*.jpeg",
+          "$APPLOCALDATA/custom-media/wallpaper/*.png",
+          "$APPLOCALDATA/custom-media/wallpaper/*.webp",
+          "$APPLOCALDATA/custom-media/wallpaper/*.gif",
+          "$APPLOCALDATA/custom-media/wallpaper/*.mp4",
+          "$APPLOCALDATA/custom-media/wallpaper/*.webm",
+          "$APPLOCALDATA/custom-media/icon/*.png",
+          "$APPLOCALDATA/custom-media/icon/*.ico",
+          "$APPLOCALDATA/custom-media/music/*.mp3",
+          "$APPLOCALDATA/custom-media/music/*.wav",
+          "$APPLOCALDATA/custom-media/music/*.flac",
+          "$APPLOCALDATA/custom-media/music/*.m4a"
+        ]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
